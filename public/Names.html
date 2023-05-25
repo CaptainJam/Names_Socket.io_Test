@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Names</title>
+        <script>
+            window.onload = function() {
+                document.getElementById('nameForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var username = document.getElementById('username').value;
+                    sessionStorage.setItem('username', username);
+                    window.location.href = "P5_Sketch.html"; // page 2 URL
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Gib deinen Namen ein</h1>
+        <form id="nameForm">
+            <input type="text" id="username" name="username" required>
+            <input type="submit" value="Start">
+        </form>
+    </body>
+</html>
