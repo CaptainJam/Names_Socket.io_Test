@@ -5,7 +5,7 @@ var socket = io();
 var slider1Value, slider2Value; // Will be set by initialSliderValues event
 let sliderArray = [];
 // Setup connection
-var socket = io.connect('http://localhost:3000');
+//var socket = io.connect('http://localhost:3000');
 
 // Setup event listeners immediately upon connection
 socket.on('connect', function() {
